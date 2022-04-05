@@ -45,7 +45,7 @@ return packer.startup(function(use)
   -- use "preservim/vim-markdown" -- a plugin for markdown 
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use {
-    "lervag/vimtex",
+    "lervag/vimtex"
   } -- Vimtex for tex editing
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
@@ -77,8 +77,16 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
 
   -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  -- use "L3MON4D3/LuaSnip" --snippet engine
+  -- use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
+  -- my own snippets configuration
+  use {
+    "SirVer/ultisnips"
+  }
+  use {
+    "honza/vim-snippets"
+  }
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP

@@ -49,12 +49,12 @@ vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 
 vim.cmd [[
 let g:vimtex_view_method = 'zathura'
-]]
-vim.cmd [[
 let g:latex_view_general_viewer = 'zathura'
-]]
-vim.cmd [[
 let g:vimtex_compiler_progname = 'nvr'
+let g:qf_auto_open_quickfix = 0
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 ]]
 -- vim.cmd [[
 -- let g:tex_flavor = 'latex'
